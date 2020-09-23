@@ -1,0 +1,175 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Samovar",
+				"abbreviation": "SMVR",
+				"full": "Samovar",
+				"url": "",
+				"authors": [
+					"RuCoon"
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1600829082,
+		"dateLastModified": 1600829082
+	},
+	"monster": [
+		{
+			"name": "Romul",
+			"shortName": true,
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "Samovar",
+			"size": "L",
+			"type": "monstrosity",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d12 + 120",
+				"average": 250
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 24,
+			"dex": 12,
+			"con": 22,
+			"int": 10,
+			"wis": 16,
+			"cha": 14,
+			"save": {
+				"str": "+12",
+				"con": "+11"
+			},
+			"skill": {
+				"athletics": "+17",
+				"intimidation": "+7",
+				"perception": "+8"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 18,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"preNote": "non-magical"
+				},
+				{
+					"resist": [
+						"poison"
+					]
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"cr": "13",
+			"trait": [
+				{
+					"name": "Charge",
+					"entries": [
+						"If Romul moves at least 10 ft. straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 ({@damage 2d8}) piercing damage. If the target is a creature, it must succeed on a {@dc 19} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Reckless",
+					"entries": [
+						"At the start of its turn, Romul can gain advantage on all melee weapon attack rolls it makes during that turn, but attack rolls against it have advantage until the start of its next turn."
+					]
+				},
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"Romul deals double damage to objects and structures."
+					]
+				},
+				{
+					"name": "Bloodlust",
+					"entries": [
+						"Each successful attack by Romul generates a +1 bonus to its attack rolls (to a maximum of +5) and a +2 to its damage rolls (to a maximum of +10) to its first attack on its next turn. If the Romul misses with an attack or fails to attack, it loses these bonuses and starts again."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Romul makes three attacks: two with its greataxe and one gore attack."
+					]
+				},
+				{
+					"name": "Greataxe",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}18 ({@damage 2d12 + 5}) slashing damage, plus 8 ({@damage 2d8}) fire damage."
+					]
+				},
+				{
+					"name": "Gore",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) piercing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Unbreakable Will (1/day)",
+					"entries": [
+						"If Romul fails s saving throw that would cause him to become {@condition paralyzed}, {@condition restrained}, {@condition stunned} or asleep, he automatically suceeds instead and becomes resistant to all damage. This resistance lasts until the end of next turn of the creature that forced him to make this saving throw."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdna.artstation.com/p/assets/images/images/013/324/614/medium/wisnu-tan-rage-bellower-uplox.jpg?1539093942"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/8Fp83FL.png",
+			"traitTags": [
+				"Charge",
+				"Reckless",
+				"Siege Monster"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"F",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		}
+	]
+}
