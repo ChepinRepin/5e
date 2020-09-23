@@ -1,0 +1,149 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Samovar",
+				"abbreviation": "SMVR",
+				"full": "Samovar",
+				"url": "",
+				"authors": [
+					"RuCoon"
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1600901491,
+		"dateLastModified": 1600901491
+	},
+	"spell": [
+		{
+			"name": "Aegis (Эгида)",
+			"source": "Samovar",
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "которую вы совершаете, когда видите, как вы или существо в пределах 60 футов от вас вынуждено совершить спасбросок (до его совершения)"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Вы чертите в воздухе защитную магическую руну, проецируя её на видимое существо по вашему выбору. До начала вашего следующего хода это существо может добавлять модификатор вашей заклинательной характеристики ко всем спасброскам, совершаемым им против видимых опасностей."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"Если вы накладываете это заклинание, используя ячейку 4 уровня или выше, вы можете сделать целью одно дополнительное существо за каждый уровень ячейки выше 3."
+					]
+				}
+			],
+			"miscTags": [
+				"SGT",
+				"SCL"
+			],
+			"areaTags": [
+				"ST",
+				"MT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Boblin's True Shield (Истинный Щит Боблина)",
+			"source": "Samovar",
+			"level": 5,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "которую вы совершаете, когда по вам попадают атакой или заклинанием, которое наносит урон"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Сфера из чистой магической энергии окружает вас, защищая от любых атак. Вы получаете 50 временных хитов, которые исчезают в начале вашего следующего хода. Заклинание {@spell magic missile}, направленное на вас, отражается обратно в заклинателя."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"Если вы накладываете это заклинание, используя ячейку 6 уровня или выше, количество временных хитов увеличивается на 10 за каждый уровень ячейки выше 5."
+					]
+				}
+			],
+			"miscTags": [
+				"THP",
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		}
+	]
+}
