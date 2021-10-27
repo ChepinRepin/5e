@@ -1,5 +1,5 @@
 {
-	"siteVersion": "1.134.0",
+	"siteVersion": "1.140.0",
 	"_meta": {
 		"sources": [
 			{
@@ -13,8 +13,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1629225045,
-		"dateLastModified": 1629225045
+		"dateAdded": 1635363964,
+		"dateLastModified": 1635363964
 	},
 	"monster": [
 		{
@@ -461,7 +461,7 @@
 				"poisoned"
 			],
 			"languages": [
-				"All"
+				"all"
 			],
 			"cr": "25",
 			"spellcasting": [
@@ -632,6 +632,9 @@
 			],
 			"actionTags": [
 				"Multiattack"
+			],
+			"languageTags": [
+				"XX"
 			],
 			"damageTags": [
 				"O",
@@ -926,9 +929,9 @@
 			],
 			"ac": [
 				{
-					"ac": 21,
+					"ac": 19,
 					"from": [
-						"{@item +1 plate armor}",
+						"{@item splint mail}",
 						"{@item shield|phb}"
 					]
 				}
@@ -983,7 +986,7 @@
 						"The Sentinel Marshal's spellcasting ability is Wisdom (spell save {@dc 13}). It can use {@item Dragonmark Reservoir|exploringeberron} to cast the following spells, requiring no material components:"
 					],
 					"daily": {
-						"1e": [
+						"3": [
 							"{@spell compelled duel}",
 							"{@spell shield of faith}",
 							"{@spell warding bond}",
@@ -1088,9 +1091,9 @@
 			],
 			"ac": [
 				{
-					"ac": 22,
+					"ac": 21,
 					"from": [
-						"{@item +2 plate armor}",
+						"{@item +1 plate armor}",
 						"{@item shield|phb}"
 					]
 				}
@@ -1248,6 +1251,230 @@
 				"RW"
 			],
 			"hasFluff": true
+		},
+		{
+			"name": "Véurr",
+			"shortName": true,
+			"isNamedCreature": true,
+			"source": "Samovar",
+			"size": "G",
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"eye"
+					]
+				},
+				{
+					"ac": 30,
+					"from": [
+						"body"
+					]
+				}
+			],
+			"hp": {
+				"formula": "30d8 + 210",
+				"average": 345
+			},
+			"speed": {},
+			"str": 25,
+			"dex": 5,
+			"con": 25,
+			"int": 30,
+			"wis": 20,
+			"cha": 5,
+			"save": {
+				"int": "+16",
+				"str": "+13",
+				"con": "+13"
+			},
+			"skill": {
+				"arcana": "+22",
+				"investigation": "+22",
+				"insight": "+17",
+				"history": "+22",
+				"perception": "+17"
+			},
+			"senses": [
+				"darkvision 120 ft.",
+				"truesight 30 ft."
+			],
+			"passive": 27,
+			"resist": [
+				"fire",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from magical attacks"
+				}
+			],
+			"immune": [
+				"poison",
+				"psychic",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"petrified",
+				"poisoned",
+				"prone"
+			],
+			"languages": [
+				"Giant"
+			],
+			"cr": "20",
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Véurr fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "False Appearance",
+					"entries": [
+						"While Véurr remains motionless, it is indistinguishable from a bump one the ceiling."
+					]
+				},
+				{
+					"name": "Many Eyes",
+					"entries": [
+						"Véurr has advantage on Wisdom ({@skill Perception}) checks and on saving throws against being {@condition blinded}."
+					]
+				},
+				{
+					"name": "Adamantine Plating",
+					"entries": [
+						"Any critical hit against Véurr's body becomes a normal hit."
+					]
+				},
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"Véurr is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Immobile",
+					"entries": [
+						"Véurr is incapable of moving. Its speed is always 0 feet and it can't be increased beyond that. It cannot use any actions that require moving its body in any way and it can only be moved by means of a wish spell. It automatically fails all Dexterity saving throws if the spell targets its body."
+					]
+				},
+				{
+					"name": "Limited Magic Immunity",
+					"entries": [
+						"Véurr's body can't be penetrated by spells of 5th level or lower unless it wishes to be. It has advantage on saving throws against all other spells and magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Véurr makes any combination of three Spike and Beam attacks."
+					]
+				},
+				{
+					"name": "Spike",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 90 ft., one target. {@h}({@damage 4d6 + 10}) piercing and ({@damage 2d6}) force damage."
+					]
+				},
+				{
+					"name": "Beam",
+					"entries": [
+						"{@atk rw} {@hit 11} to hit, range 120/360 ft., one target. {@h}({@damage 3d6 + 10}) force damage."
+					]
+				},
+				{
+					"name": "Calculated Strike",
+					"entries": [
+						"{@atk mw} automatic hit, reach 60 ft., one target. {@h}{@dice 2d10 + 10} piercing and {@damage 1d10} force damage."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"Véurr makes one Spike or Beam attack."
+					]
+				},
+				{
+					"name": "Adaptation",
+					"entries": [
+						"Véurr's body gains immunity to one damage type of its choice until the start of its next turn."
+					]
+				},
+				{
+					"name": "Fast Calculations (Cost 2 Actions)",
+					"entries": [
+						"Véurr makes one Calculated Strike attack."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/OQ6yzFj.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/OQ6yzFj.png",
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/484/tarrasque.mp3",
+			"traitTags": [
+				"False Appearance",
+				"Immutable Form",
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"SD",
+				"U"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"GI"
+			],
+			"damageTags": [
+				"O"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflicted": [
+				"blinded",
+				"frightened",
+				"grappled",
+				"prone",
+				"restrained"
+			]
 		}
 	]
 }
